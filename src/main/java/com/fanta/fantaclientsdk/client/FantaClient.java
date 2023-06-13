@@ -5,7 +5,7 @@ import cn.hutool.http.HttpRequest;
 import cn.hutool.http.HttpResponse;
 import cn.hutool.http.HttpUtil;
 import cn.hutool.json.JSONUtil;
-import com.fanta.fantaclientsdk.model.User;
+import com.fanta.fantaapicommon.model.entity.ClientUser;
 
 import java.util.HashMap;
 import java.util.Map;
@@ -40,8 +40,8 @@ public class FantaClient {
         return result;
     }
 
-    public String getUserNameByPost(User user) {
-        String json = JSONUtil.toJsonStr(user);
+    public String getUserNameByPost(ClientUser ClientUser) {
+        String json = JSONUtil.toJsonStr(ClientUser);
 
         HttpResponse response = HttpRequest.post(GATEWAY_HOST + "/api/name/username")
                 .addHeaders(getHeaderMap(json))

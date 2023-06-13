@@ -14,6 +14,12 @@
         <spring-boot.version>2.7.6</spring-boot.version>
     </properties>
     <dependencies>
+        <!--        引入公共包-->
+        <dependency>
+            <groupId>com.fanta</groupId>
+            <artifactId>fanta-common</artifactId>
+            <version>1.0.0</version>
+        </dependency>
         <dependency>
             <groupId>org.springframework.boot</groupId>
             <artifactId>spring-boot-starter</artifactId>
