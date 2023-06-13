@@ -4,7 +4,7 @@
     <modelVersion>4.0.0</modelVersion>
     <groupId>com.fanta</groupId>
     <artifactId>fanta-client-sdk</artifactId>
-    <version>0.0.1</version>
+    <version>1.0.0</version>
     <name>fanta-client-sdk</name>
     <description>fanta-client-sdk</description>
     <properties>
